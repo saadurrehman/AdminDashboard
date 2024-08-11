@@ -1,4 +1,4 @@
-# PickBazar Documentation
+# Admin Dashboard Documentation
 
 # Introduction
 
