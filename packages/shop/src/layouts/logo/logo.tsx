@@ -1,6 +1,6 @@
-import React from 'react';
-import Router from 'next/router';
-import { LogoBox, LogoImage } from './logo.style';
+import React from "react";
+import Router from "next/router";
+import { LogoBox } from "./logo.style";
 type LogoProps = {
   imageUrl: string;
   alt: string;
@@ -9,14 +9,14 @@ type LogoProps = {
 
 const Logo: React.FC<LogoProps> = ({ imageUrl, alt, onClick }) => {
   function onLogoClick() {
-    Router.push('/');
+    Router.push("/");
     if (onClick) {
       onClick();
     }
   }
   return (
     <LogoBox onClick={onLogoClick}>
-      <LogoImage src={imageUrl} alt={alt} />
+      <h3>ADMIN DASHBOARD</h3>
     </LogoBox>
   );
 };
